@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+:root
+{
+    --fontforform:20px;
+    
+}
+html
+{
+    max-height: 200vh;
+}
+.logo-intro
+{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(180deg,rgb(19, 31, 44),white);
+}
+img
+{
+    width:100px;
+    height:100px;
+
+}
+h1
+{
+    color: whitesmoke;
+    padding-top: 30px;
+}
+.container
+{
+    max-width: 68vw;
+    min-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    border: 3px solid black;
+    border-radius: 14px;
+    background:linear-gradient(180deg,whitesmoke, rgb(149, 148, 148));
+    box-shadow: 10px 10px 10px;
+
+}
+p
+{
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.name-content,.info-content,.passwords,.button
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.info
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.05rem;
+
+
+}
+a:link
+{
+    color:black;
+    font-size: 1.05rem;
+}
+
+
+
+label
+{
+    font-size: var(--fontforform);
+}
+input
+{
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 2rem;
+    width: 250px;
+    font-size: 15px;
+    padding-left: 10px ;
+    margin-top: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+input:active
+{
+    transform:scale(1.07);
+    border-color: black;
+    border-width: 3px;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    min-width: 40vw;
+    max-width: 48vw;
+    min-height: 50vh;
+    max-height: 65vh;
+    flex-wrap: wrap;
+    }
+button
+{
+    width: 11rem;
+    height: 2.5rem;
+    font-size: large;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 10px;
+    transition:transform 0.4s ease-in-out;
+    margin-top: 20px;
+
+}
+button:hover
+{
+    border: 2px solid white;
+    cursor: pointer;
+}
+button:active
+{
+    transform: scale(1.1);
+
+}
+
