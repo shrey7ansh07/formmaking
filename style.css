@@ -133,4 +133,18 @@ button:active
     transform: scale(1.1);
 
 }
-
+/** adding from here */
+#suggestion
+{
+    display: none;
+    position: absolute;
+    color: white;
+    z-index: 1;
+    border: 1px solid black;
+    background-color: black;
+    padding: 10px;
+}
+#accesskey:invalid
+{
+    border:3px solid red;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FORM</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="logo-intro">
@@ -13,7 +14,7 @@
       <p>This is just a trial form. No data will be collected from this</p>
       <p>LET'S DO IT</p>
       <div class="container">
-        <form action="#">
+        <form action="#" class="myform">
           <div class="name-content">
             <div>
               <div>
@@ -61,7 +62,13 @@
               <div>
                 <label for="accesskey">PASSWORD</label>
               </div>
-              <input type="password" id="accesskey" name="pass_word" required />
+              <input
+                type="password"
+                id="accesskey"
+                name="pass_word"
+                minlength="6"
+                required
+              />
             </div>
 
             <div>
@@ -72,8 +79,10 @@
                 type="password"
                 id="accesskeyconfrm"
                 name="cnfrmpass"
+                minlength="6"
                 required
               />
+              <div id="suggestion">password mismatch</div>
             </div>
           </div>
           <div class="button">
