@@ -14,7 +14,7 @@
       <p>This is just a trial form. No data will be collected from this</p>
       <p>LET'S DO IT</p>
       <div class="container">
-        <form action="#" class="myform">
+        <form action="#" class="myform" novalidate>
           <div class="name-content">
             <div>
               <div>
@@ -55,9 +55,6 @@
                 placeholder="7024XXXXX"
                 required
               />
-              <div class="suggestion" id="phonelength">
-                the mobile no should be of length 10
-              </div>
             </div>
           </div>
           <div class="passwords">
@@ -66,9 +63,6 @@
                 <label for="accesskey">PASSWORD</label>
               </div>
               <input type="password" id="accesskey" name="pass_word" required />
-              <div class="suggestion" id="passwordsuggest">
-                Password is too short, min 6 characters are required
-              </div>
             </div>
 
             <div>
@@ -81,9 +75,6 @@
                 name="cnfrmpass"
                 required
               />
-              <div class="suggestion" id="c_passwordsuggest">
-                password mismatch
-              </div>
             </div>
           </div>
           <div class="button">

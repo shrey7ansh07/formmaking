@@ -148,4 +148,8 @@ button:active
 {
     border: 3px solid red;
 }
+.addborderpos
+{
+    border: 3px solid rgb(23, 199, 23);
+}
 
