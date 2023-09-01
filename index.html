@@ -55,6 +55,9 @@
                 placeholder="7024XXXXX"
                 required
               />
+              <div class="suggestion" id="phonelength">
+                the mobile no should be of length 10
+              </div>
             </div>
           </div>
           <div class="passwords">
@@ -62,13 +65,10 @@
               <div>
                 <label for="accesskey">PASSWORD</label>
               </div>
-              <input
-                type="password"
-                id="accesskey"
-                name="pass_word"
-                minlength="6"
-                required
-              />
+              <input type="password" id="accesskey" name="pass_word" required />
+              <div class="suggestion" id="passwordsuggest">
+                Password is too short, min 6 characters are required
+              </div>
             </div>
 
             <div>
@@ -79,10 +79,11 @@
                 type="password"
                 id="accesskeyconfrm"
                 name="cnfrmpass"
-                minlength="6"
                 required
               />
-              <div id="suggestion">password mismatch</div>
+              <div class="suggestion" id="c_passwordsuggest">
+                password mismatch
+              </div>
             </div>
           </div>
           <div class="button">

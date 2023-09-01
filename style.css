@@ -134,7 +134,7 @@ button:active
 
 }
 /** adding from here */
-#suggestion
+.suggestion
 {
     display: none;
     position: absolute;
@@ -144,7 +144,8 @@ button:active
     background-color: black;
     padding: 10px;
 }
-#accesskey:invalid
+.addborder
 {
-    border:3px solid red;
+    border: 3px solid red;
 }
+
