@@ -29,6 +29,8 @@ function validate(e) {
     phone.setCustomValidity("mobile no should be of 10 digits")
     phone.reportValidity();  
     phone.classList.add("addborder")
+    phone.classList.remove("addborderpos")//*adding these to prevent any issue
+
   }
   else
   {
@@ -40,6 +42,8 @@ function validate(e) {
     password.setCustomValidity("password too short min 6 charachters")
     password.reportValidity();
     password.classList.add("addborder")
+    password.classList.remove("addborderpos")//*adding these to prevent any issue
+
   }
   else
   {
@@ -54,6 +58,8 @@ function validate(e) {
     c_password.setCustomValidity("password mismatch")
     c_password.reportValidity(); 
     c_password.classList.add("addborder")
+    c_password.classList.remove("addborderpos")//*adding these to prevent any issue
+
 
   } 
   else
@@ -66,7 +72,10 @@ function validate(e) {
   if (!emailRegex.test(emailValue)) {
     email.setCustomValidity("Invalid email format");
     email.reportValidity();
-    email.classList.add("addborder");}
+    email.classList.add("addborder");
+    email.classList.remove("addborderpos")//*adding these to prevent any issue
+  }
+  
     else
     {
       email.classList.remove("addborder")
